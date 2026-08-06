@@ -1,0 +1,27 @@
+Species-Specific Training Data Requirements Study
+==================================================
+
+Peach
+------------------------------
+  5 images: 85.76%
+  10 images: 62.51%
+  15 images: 93.23%
+  20 images: 96.84%
+  25 images: 92.07%
+  30 images: 92.15%
+  40 images: 92.15%
+  50 images: 93.15%
+  Optimal: 20 images
+
+Corn
+------------------------------
+  5 images: 49.01%
+  10 images: 67.97%
+  15 images: 73.43%
+  20 images: 73.65%
+  25 images: 86.34%
+  30 images: 90.79%
+  40 images: 89.02%
+  50 images: 88.11%
+  Optimal: 50 images
+

@@ -1,0 +1,126 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+backend/venv/
+backend/.venv/
+
+# Environment variables
+.env
+.env.*
+
+# ==========================
+# Node.js / React / Vite
+# ==========================
+node_modules/
+frontend/node_modules/
+
+dist/
+build/
+.vite/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================
+# macOS
+# ==========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# JetBrains
+# ==========================
+.idea/
+
+# ==========================
+# Jupyter
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# TensorFlow logs
+# ==========================
+logs/
+tensorboard_logs/
+
+# ==========================
+# Dataset (DO NOT PUSH)
+# ==========================
+
+# Apple dataset
+research/data_apple/
+research/apple/
+
+# Corn dataset
+research/data_corn/
+research/corn/
+
+# Grape dataset
+research/data_grape/
+research/grape/
+
+# Peach dataset
+research/data_peach/
+research/peach/
+
+# Generic dataset folders
+research/dataset/
+research/datasets/
+research/PlantVillage/
+research/train/
+research/val/
+research/validation/
+research/test/
+
+# Ignore all images inside dataset folders
+research/**/*.jpg
+research/**/*.jpeg
+research/**/*.png
+
+# ==========================
+# Large training artifacts
+# (Keep these ignored unless
+# you intentionally want them
+# in GitHub)
+# ==========================
+
+research/saved_model/*.h5
+research/saved_model/*.keras
+research/saved_model/*.pb
+
+# ==========================
+# Temporary files
+# ==========================
+*.tmp
+*.bak
+*.swp
+
+# ==========================
+# OS files
+# ==========================
+Thumbs.db
+desktop.ini
