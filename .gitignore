@@ -108,9 +108,6 @@ research/**/*.png
 # in GitHub)
 # ==========================
 
-research/saved_model/*.h5
-research/saved_model/*.keras
-research/saved_model/*.pb
 
 # ==========================
 # Temporary files
