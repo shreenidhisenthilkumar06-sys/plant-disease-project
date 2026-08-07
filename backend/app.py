@@ -47,7 +47,7 @@ app = FastAPI(
 
 origins = [
     "http://localhost:5173",
-    "https://plant-disease-project-dx5ppxekh-shreenidhi2.vercel.app",
+    "https://plant-disease-project-amber.vercel.app",
 ]
 
 env_origins = os.getenv("CORS_ORIGINS")
