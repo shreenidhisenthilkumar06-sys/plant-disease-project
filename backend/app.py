@@ -45,7 +45,15 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-origins = [origin.strip() for origin in os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",") if origin.strip()]
+origins = [
+    "http://localhost:5173",
+    "https://plant-disease-project-dx5ppxekh-shreenidhi2.vercel.app",
+]
+
+env_origins = os.getenv("CORS_ORIGINS")
+if env_origins:
+    origins = [origin.strip() for origin in env_origins.split(",") if origin.strip()]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
