@@ -5,7 +5,7 @@ export const API_BASE_URL =
 
 const api = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 25000,
+  timeout: 90000,
 });
 
 function requestMessage(error) {
