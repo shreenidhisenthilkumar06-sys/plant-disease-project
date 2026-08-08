@@ -13,15 +13,31 @@ export default function HomePage() {
           assessment and practical care guidance.
         </p>
 
-        <div className="card" style={{ marginTop: '1.5rem', textAlign: 'left' }}>
+        <div
+          className="card"
+          style={{
+            marginTop: '1.5rem',
+            textAlign: 'left',
+            paddingBottom: '1.5rem',
+          }}
+        >
           <p style={{ margin: 0, fontWeight: 700 }}>🍇 Supported input</p>
-          <p style={{ marginTop: '0.5rem' }}>
-            This deployed version currently supports <strong>grape leaf disease detection only</strong>.
-            Uploading leaves from apple, peach, corn, other plants, fruits, objects, or unrelated photos may
-            produce incorrect predictions.
+
+          <p style={{ marginTop: '1rem', lineHeight: 1.7 }}>
+            This deployed version currently supports
+            <strong> grape leaf disease detection only</strong>.
+            Uploading leaves from other plants, fruits, objects, or unrelated
+            photos may produce incorrect predictions.
           </p>
 
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
+          <div
+            style={{
+              display: 'flex',
+              gap: '0.5rem',
+              flexWrap: 'wrap',
+              marginTop: '1rem',
+            }}
+          >
             <span className="tag">Healthy</span>
             <span className="tag">Black rot</span>
             <span className="tag">Esca</span>
@@ -29,7 +45,11 @@ export default function HomePage() {
           </div>
         </div>
 
-        <Link className="button button-primary" to="/predict">
+        <Link
+          className="button button-primary"
+          to="/predict"
+          style={{ marginTop: '1.5rem' }}
+        >
           Analyze a grape leaf <span>→</span>
         </Link>
       </section>
@@ -51,9 +71,16 @@ export default function HomePage() {
         <h2>How it works</h2>
 
         <ol>
-          <li>Upload a sharp, well-lit image of a <strong>single grape leaf</strong>.</li>
-          <li>The trained TensorFlow model evaluates its visual disease pattern.</li>
-          <li>Review the predicted class and disease-management guidance.</li>
+          <li>
+            Upload a sharp, well-lit image of a
+            <strong> single grape leaf</strong>.
+          </li>
+          <li>
+            The trained TensorFlow model evaluates its visual disease pattern.
+          </li>
+          <li>
+            Review the predicted class and disease-management guidance.
+          </li>
         </ol>
 
         <div
@@ -67,6 +94,7 @@ export default function HomePage() {
           }}
         >
           <p style={{ margin: 0, fontWeight: 700 }}>⚠️ Best results</p>
+
           <ul style={{ marginTop: '0.5rem', paddingLeft: '1.2rem' }}>
             <li>Use a single grape leaf</li>
             <li>Capture the leaf in good lighting</li>
@@ -76,7 +104,8 @@ export default function HomePage() {
         </div>
 
         <p className="fine-print">
-          Predictions are decision support, not a substitute for a local plant-health professional.
+          Predictions are decision support, not a substitute for a local
+          plant-health professional.
         </p>
       </section>
     </>
